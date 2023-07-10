@@ -16,13 +16,18 @@
                 {
                     Console.Write($"{col}\t");
                 }
-                Console.WriteLine("");
-                for (int i = 0; i < ceiling; i++)
+                Console.Write("\n ");
+                for (int col = 0; col <= ceiling; col++)
                 {
-                    Console.Write($"{i}\t");
-                    for (int j = 0; j <= ceiling; j++)
+                    Console.Write($"--------");
+                }
+                Console.WriteLine("");
+                for (int col = 0; col < ceiling; col++)
+                {
+                    Console.Write($"{col} |\t");
+                    for (int row = 0; row <= ceiling; row++)
                     {
-                        Console.Write($"{i * j}\t");
+                        Console.Write($"{col * row}\t");
                     }
                     Console.WriteLine();
                 }
